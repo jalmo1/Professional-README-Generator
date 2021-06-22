@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
 
 // Create questions asking user for details on the project
@@ -26,17 +27,23 @@ const questions = [
       "Do What The F*ck You Want To Public License",
       "Apache license 2.0",
       "Academic Free License v3.0",
+      "Mozilla Public License 2.0",
+      "Open Software License 3.0",
+      "No license!",
     ],
+    validate: (licenseInput) => {
+      if (licenseInput) {
+        return true;
+      } else {
+        console.log("Please pick a license!");
+      }
+    },
   },
-  {
-    type: "input",
-    name: "testing",
-    message: "How do you test your project?",
-  },
+  { type: "input", name: "testing", message: "How do you test your project?" },
   {
     type: "input",
     name: "installation",
-    message: "Please provide an explanation on how to install.",
+    message: "Please provide an explanation on how to install. (Required)",
   },
   {
     type: "input",
@@ -46,7 +53,7 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "What is this project used for?",
+    message: "What is this project used for? (Required)",
   },
   //Asks user for email
   {
@@ -63,11 +70,19 @@ const questions = [
 ];
 console.log(questions);
 
-/*// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) => {
+    if (err) throw err;
+  });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then(function (userInput) {
+    console.log(userInput);
+  });
+}
 
 // Function call to initialize app
-init();*/
+init();
