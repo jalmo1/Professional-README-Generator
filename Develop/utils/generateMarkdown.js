@@ -1,3 +1,25 @@
+/*
+Game plan=>
+
+LICENSE BADGE
+
+then TABLE OF CONTENTS
+
+then TITLE
+
+then DETAILED DESCRIPTION
+
+then VIDEO 
+
+then INSTALLATION
+
+then USAGE
+
+then CONTRIBUTORS 
+
+then CONTACT
+*/
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
@@ -12,7 +34,24 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  
+  ### [![license](https://img.shields.io/)]
+  ## Table of contents:
+
+  # **${data.title}**
+
+  ## **Description:**
+
+  ## Video:
+
+  ## Installation:
+
+  ## Usage:
+
+  ## Contributors:
+
+  ### Contact:
 
 `;
 }
