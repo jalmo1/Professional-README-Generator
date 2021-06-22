@@ -2,7 +2,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-// TODO: Create an array of questions for user input
 
 // Create questions asking user for details on the project
 const questions = [
@@ -21,15 +20,15 @@ const questions = [
   {
     type: "checkbox",
     name: "license",
-    message: "License for current project (Please pick ATLEAST one)",
+    message: "License for current project (Please pick one!)",
     choices: [
       "MIT",
-      "Do What The F*ck You Want To Public License",
-      "Apache license 2.0",
-      "Academic Free License v3.0",
-      "Mozilla Public License 2.0",
-      "Open Software License 3.0",
-      "No license!",
+      "DoWhatTheF*ckYouWantToPublicLicense",
+      "Apachelicense2.0",
+      "AcademicFreeLicensev3.0",
+      "MozillaPublicLicense2.0",
+      "OpenSoftwareLicense3.0",
+      "Nolicense!",
     ],
     validate: (licenseInput) => {
       if (licenseInput) {
@@ -39,7 +38,9 @@ const questions = [
       }
     },
   },
+
   { type: "input", name: "testing", message: "How do you test your project?" },
+
   {
     type: "input",
     name: "installation",
@@ -68,7 +69,6 @@ const questions = [
     message: "What is your Github username?",
   },
 ];
-console.log(questions);
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -81,6 +81,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then(function (userInput) {
     console.log(userInput);
+    writeToFile("README.md", generateMarkdown(userInput));
   });
 }
 
