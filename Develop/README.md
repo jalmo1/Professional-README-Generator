@@ -1,39 +1,33 @@
-### [![license](https://img.shields.io/badge/license-MIT-blueviolet)](https://shields.io)
 
-## Table of contents:
+  
+  ### [![license](https://img.shields.io/badge/license-MIT-blueviolet)](https://shields.io)
 
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributors](#contributors)
-- [Questions](#questions)
 
-# nasdnadnadnad
+  ## Table of contents:
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributors](#contributors)
+  - [Contact](#contact)
 
-## Description:
+  # Professional README Generator
 
-    asdbdiuabdiaudbaidbaiduabdiuabdaiudbgaiduabdiuabdaiudbaidabiduabdaiudbaidbaidubaiduabdiuabdiaubdiaudbaidubaidubadiuabdiuabdiaubdiaubaiudbaidubaiduabdaidbguaidubaidubad;uabdaiudbaidbsiuyfbaiuyfbasiuyfbawifbaiseufbasiufgbasiufbawif
+  ## Description:
+    Creates a README template to input all your information
+  ## Video:
 
-## Video:
+  ## Test:
+  After installation you have to run "npm install" to install all the needed packages. After that you have to navigate to the right folder in order to run index.js. Once you run the correct file you will be prompted with questions. When all of the prompts and questions are answered, a new README file will be created and a populated README.md will be seen. 
 
-## Test:
+  ## Installation:
+  Clone the repo into a directory. Once the repo is cloned, you will be met with all the necessary files. After the cloning is done you will have to run "npm install"
 
-fawuiyfbawifbwaiufbwilaufbawilfbawlifbawilfubawilufbailwufbailwufbawilfbailwufbailweubfhbfdyfgwefiubweilfuwghebfiubwefiluwabfiwaufgbawf
+  ## Usage:
+  Used to created professional README's with ease!
 
-## Installation:
+  ## Contributors:
+  none
 
-waiebfilwauefbiawuebfilwabfiuwbfiwbfiweubfiubfilwubfawiufbwailfuabwf
-
-## Usage:
-
-fwaieufbawiluefbawifubawilfubailwufbawilfubawfiu
-
-## Contributors:
-
-fiawufbli
-
-## Contact:
-
-    - Email: waieufbawifub
-
-    - Github: https://github.com/fwaiubfawiufb
+  ## Contact:
+    - Email: Joshuarosamktp4@gmail.com
+    - Github: https://github.com/jalmo1

@@ -18,7 +18,7 @@ const questions = [
     message: "Please provide a detailed description of the project. (Required)",
   },
   {
-    type: "checkbox",
+    type: "list",
     name: "license",
     message: "License for current project (Please pick one!)",
     choices: [
@@ -35,6 +35,7 @@ const questions = [
         return true;
       } else {
         console.log("Please pick a license!");
+        return false;
       }
     },
   },
